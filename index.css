@@ -1,0 +1,13 @@
+* {
+    color: red;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+main div h2, 
+main div p {
+    font-style: italic;
+    
+}
