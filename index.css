@@ -1,13 +1,22 @@
-* {
-    color: red;
-    font-weight: bold;
-    margin: 0px;
-    padding: 0px;
-    
+
+header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
 }
 
-main div h2, 
-main div p {
-    font-style: italic;
-    
+footer {
+    padding: 12px 16px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+
+header nav ul, header > ul {
+    list-style: disc;
+    margin: 8px 0 0 22px;
+    padding: 0;
+}
+header nav li, header > ul > li {
+    margin: 0;
+    line-height: 1.1;
 }
