@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>
-        Home Page
-    </title>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <header>
-        <h1>Home Page</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+
+  <div class="page">
+
+    <header class="topbar">
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div>
-            <h2>Images</h2>
-            <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" alt="Random Text">
-        </div>
-    </main>
-</body>
+      <h1 class="title">Welcome to our page</h1>
 
+      <div class="search-row">
+        <input type="search" placeholder="Search...">
+        <button type="button">Search</button>
+      </div>
+
+      <section class="gallery">
+        <img src="https://i.abcnewsfe.com/a/f43853f3-9eaf-4048-9ae7-757332c5787e/mclaren-1-ht-gmh-240412_1712928561648_hpMain_16x9.jpg?w=1600" alt="Img1">
+        <img src="https://i.abcnewsfe.com/a/f43853f3-9eaf-4048-9ae7-757332c5787e/mclaren-1-ht-gmh-240412_1712928561648_hpMain_16x9.jpg?w=1600" alt="Img2">
+        <img src="https://i.abcnewsfe.com/a/f43853f3-9eaf-4048-9ae7-757332c5787e/mclaren-1-ht-gmh-240412_1712928561648_hpMain_16x9.jpg?w=1600" alt="Img3">
+      </section>
+
+      <div class="desc">
+        <strong>Description</strong>
+        <p>Description</p>
+      </div>
+
+      <p class="lorem">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </main>
+
+    <footer class="bottombar">
+      © All rights reserved.
+    </footer>
+
+  </div>
+</body>
 </html>
