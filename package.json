@@ -1,0 +1,24 @@
+{
+  "name": "tp_project",
+  "version": "1.0.0",
+  "description": "Welcome to the **Automation Testing with Playwright & TypeScript** course repository! This repository serves as a resource for students enrolled in the course. The course is designed to help students understand and apply automation testing concepts using Playwright and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragomirStoychev/AT_PlaywrightAndTypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DragomirStoychev/AT_PlaywrightAndTypeScript/issues"
+  },
+  "homepage": "https://github.com/DragomirStoychev/AT_PlaywrightAndTypeScript#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
