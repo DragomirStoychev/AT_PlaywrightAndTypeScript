@@ -1,10 +1,18 @@
-console.log("Hello! My first ts code.")
-
-let fName: string = 'Hello! My "first" ts code.';
-
+const name: string = "Petar Petrov";
 const age: number = 20;
 
-let isTrue: boolean = 5 > 7;
+console.log(`Hello! I am ${name}, ${age} years old`);
 
-console.log(isTrue);
+let num1: number = 15;
+let num2: number = 7;
 
+const addition: number = num1 + num2;
+const subtraction: number = num1 - num2;
+
+console.log(`Addition: ${num1} + ${num2} = ${addition}`);
+console.log(`Subtraction: ${num1} - ${num2} = ${subtraction}`);
+
+let num: number = 42;
+const isWithinRange: boolean = num >= 10 && num <= 50;
+
+console.log(`Number ${num} within [10, 50]: ${isWithinRange}`);
