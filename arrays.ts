@@ -27,3 +27,24 @@ let checkTypeOf = combinedArray.map((el: number | string) => {
 });
 //console.log(checkTypeOf);
 
+//method filter
+let positiveNums: number [] = [2,3,4,5,6];
+let filteredArr: number [] = positiveNums.filter((num: number) => num >3); //[4,5,6]
+//console.log(filteredArr);
+
+//method sort
+let sortNums: number[] = [100, 2, 30, 5, 40, 6];
+let sortedResult: number[] = sortNums.sort((a: number, b: number) => a - b); //[2,5,6,30,40,100]
+
+//method push
+sortedResult.push(200); //[2,5,6,30,40,100,200]
+
+//method pop
+sortedResult.pop(); //[2,5,6,30,40,100]
+
+//method shift
+sortedResult.shift(); //[5,6,30,40,100]
+
+//method unshift
+sortedResult.unshift(1); //[1,5,6,30,40,100]
+
