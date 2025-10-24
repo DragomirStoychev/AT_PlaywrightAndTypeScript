@@ -63,4 +63,12 @@ if (numThree <= 10) {
     console.log(`The number ${numThree} is not greater than 3`);
 }
 
+//union types
+let id: string | number;
+id = 20;
+id = 'Twenty';
+// id = true; // Error: Type 'boolean' is not assignable to type 'string | number'
+
+let result: number | boolean |null;
+
 
