@@ -47,14 +47,14 @@ const testObj = {
     name: "Pesho",
     age: 20
 };
-console.log(testObj[key]); //Pesho
+//console.log(testObj[key]); //Pesho
 
 person.greeting();
 person["greeting"]();
 
 //properties redeclaration
 person.age = 35;
-console.log(person.age); //35
+//console.log(person.age); //35
 
 //let vs const redeclaration
 let dog = {name: "Spark"};
@@ -93,7 +93,7 @@ const user: User = {
 //optional parameters added later
 user.password = "newPassword";
 //user.email = "test@mail.com"; //invalid because email is readonly
-console.log(user);
+//console.log(user);
 
 const secondUser: User = {
     name: 'Tom',
@@ -113,7 +113,29 @@ const thirdUser: UserPermissions = {
     password: 123456,
     role: "admin",
     job: "QA",
-    permissions: "read-write"
+    permissions: "denied"
 };
 
+// exercise sum total price
+interface Product {
+    name: string;
+    price: number;
+    getTotalPrice: (quantity: number) => number;
+};
 
+const phone: Product = {
+    name: "Nokia",
+    price: 100,
+    getTotalPrice: function (quantity: number) {
+        return this.price * quantity;
+    }
+};
+
+function orderDetails (quantity: number, product: Product) {
+        console.log("Order for: ", product.name);     
+        console.log(`Product quantity: ${quantity}`);
+        console.log(`Product unit price: ${product.price} $`);
+        console.log(`Total price: ${product.getTotalPrice(quantity)} $`);
+};
+
+orderDetails(3, phone);

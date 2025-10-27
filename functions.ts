@@ -37,3 +37,14 @@ function calculatePrice(price: number, tax: number = 0.2): number {
 }
 console.log(calculatePrice(100)); //120
 console.log(calculatePrice(100, 0.1)); //110
+
+//Function with parameter of union type
+function printId(id: number | string): void {
+    console.log(`ID - ${id} is type of ${typeof id}`);
+};
+
+printId(101); //ID - 101 is type of number
+printId('#202'); //ID - 202 is type of string
+//printId(true); //Error: Argument of type 'boolean' is not assignable to parameter of type 'number | string'.
+
+
