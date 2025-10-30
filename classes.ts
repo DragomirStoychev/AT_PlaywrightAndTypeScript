@@ -62,7 +62,7 @@ class PrivatePersonData {
         return `Hello, my name is ${this.name} and I am ${this.age} years old.`
     }
     intro2(): void{
-        console.log (`Hello, my name is ${this.name}.`,
+        console.log (`Hello, my name is ${this.name}.`),
         console.log (this.displaySecretMessage())
     }
 }
