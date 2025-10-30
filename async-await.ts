@@ -65,13 +65,19 @@ interface Product {
 }
 
 async function getData(): Promise<void> {
+    try{
     const response = await fetch('https://fakestoreapi.com/products/1');
     const data: Product = await response.json();
-    console.log("response", data);
+    console.log("response: ", data);
+    } catch (err){
+        console.error(err);
+    }
 }
 getData();
 // Output:
-// response {id: 1, title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops", price: 109.95, description: "Your perfect pack for everyday use and walks in the forest...", category
+// response:  { id: 1, title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops', price: 109.95, description: 'Your perfect pack for everyday use and walks in the forest...', category: 'men\'s clothing', image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg', rating: { rate: 3.9, count: 120 } }
+
+
 
 //try catch finally
 try {
@@ -85,4 +91,29 @@ try {
 // Output:
 // invalid JSON: [SyntaxError: Unexpected token v in JSON at position 2]
 // Execution completed.: "
+
+//try/catch/finally exercise
+
+function divideNumbers(numberOne: number, numberTwo: number)  {
+   try {
+         if (numberTwo === 0) {
+        throw new Error("Division by zero is not allowed.");
+         } else {
+        const result: number = numberOne / numberTwo;
+        console.log(`Result: ${result}`);
+         }
+        
+    } catch (err: unknown) {
+        console.error(err);
+    } finally {
+        console.log("Execution completed.");
+    }
+};
+divideNumbers(10, 2); // Result: 5
+divideNumbers(10, 0); // Error: Division by zero is not allowed.
+// Output:
+// Result: 5
+// Execution completed.
+// Error: Division by zero is not allowed.
+// Execution completed.
 
